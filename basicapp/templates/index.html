@@ -1,4 +1,4 @@
-
+{% load static %}
 {% extends 'base2.html' %}
 {% block content %}
 <!--<h2>Body Content</h2>
@@ -13,7 +13,7 @@
       <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
     </p>-->
         <hr>
-    <img src="/static/ONINWERX.png">
+    <img src="{% static 'ONINWERX.png' %}">
   </main>
 <hr>
 {% endblock %}
