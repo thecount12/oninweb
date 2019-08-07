@@ -53,3 +53,20 @@ class Batch(models.Model):
 
     def __str__(self):
         return self.batch_name
+
+
+class Battery(models.Model):
+    battery_name = models.CharField(max_length=60, blank=True)
+    battery_model = models.CharField(max_length=60, blank=True)
+    battery_type = models.CharField(max_length=60, blank=True)
+    mah = models.IntegerField(blank=True, null=True)
+    quantity = models.IntegerField(blank=True, null=True)
+    sourced_from = models.CharField(max_length=60, blank=True)
+    notes = models.TextField(blank=True, null=True, help_text="battery review")
+
+    def __unicode__(self):
+        return self.battery_name
+
+    def __str__(self):
+        return self.battery_name
+
