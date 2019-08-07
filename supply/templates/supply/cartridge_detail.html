@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h2>Catridge Details</h2>
+    <p>Name: {{ object.name }}</p>
+    <p>Model: {{ object.cartridge_model }}</p>
+    <p>Type: {{ object.cartridge_type }}</p>
+    <p>Quantity: {{ object.quantity }}</p>
+    <p>Sourced From: {{ object.sourced_from }}</p>
+    <p>Notes: {{ object.notes }}</p>
+
+{% endblock %}
