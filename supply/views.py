@@ -23,3 +23,7 @@ class CartDetailView(LoginRequiredMixin, DetailView):
     login_url = '/accounts/login'
     redirect_field_name = 'next'  # to the proper page.
     model = Cartridge
+
+
+def add_batch_view():
+    pass
