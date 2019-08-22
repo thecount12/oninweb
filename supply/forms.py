@@ -8,3 +8,5 @@ from supply.models import Batch
 class AddBatch(forms.ModelForm):
     class Meta:
         model = Batch
+        fields = ['batch_name', ]
+
