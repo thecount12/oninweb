@@ -1,6 +1,10 @@
 {%  extends 'base.html' %}
 {% block content %}
+
+    <p><a href="/supply/addbatch">Add New Batch</a></p>
+    <p><a href="/supply/batchview">List Batchs</a></p>
 <ul>
+<hr>
 {% for cat in object_list %}
     <li><p>Cartridge Type: <a href="/supply/{{ cat.id }}">{{ cat.name }}</a></p></li>
 {% endfor %}

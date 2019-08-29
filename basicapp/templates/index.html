@@ -1,6 +1,8 @@
 {% extends 'base2.html' %}
 {% load static %}
 {% block content %}
+
+
 <!--<h2>Body Content</h2>
 <p>Here is your basic page. Above you have Navigation bar, Jumbotron in the Header which contains
 'Hello, world!',<br> and additional space for marketing.</p>
@@ -14,6 +16,9 @@
     </p>-->
         <hr>
     <img src="{% static 'ONINWERX.png' %}" style="max-width: 100%; height: auto;">
+    {% if user.is_staff %}
+        <p><a href="/supply">supply</a></p>
+    {% endif %}
   </main>
 <hr>
 {% endblock %}

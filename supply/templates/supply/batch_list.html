@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <a href="/supply/">Supply</a>
+<ul>
+{% for batch in object_list %}
+<li><p>asdf: {{ batch.batch_name }}</p></li>
+{% endfor %}
+</ul>
+{% endblock %}
